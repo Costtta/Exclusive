@@ -1,0 +1,342 @@
+/* General start */
+:root{
+    --mainRed: #DB4444;
+    --mainRedHover: #E07575;
+    --mainGray: #F5F5F5;
+    --mainBlack: #000000;
+    --mainGreen: #00FF66;
+    --mainLightGray: #7D8184; 
+}
+
+section{
+    margin-block: 6rem;
+}
+
+button{
+    background-color: var(--mainRed) !important;
+    color: white !important;
+    transition: 0.4s !important;
+}
+
+button:hover{
+    background-color: var(--mainRedHover) !important;
+}
+
+.navbar-toggler{
+    background-color: white !important;
+}
+
+.navbar-toggler:hover{
+    background-color: white !important;
+}
+
+.secondary-subtitle::before{
+    content: '';
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    background-color: var(--mainRed);
+    transform: translateY(50%);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.secondary-subtitle:hover::before{
+    background-color: var(--mainRedHover);
+}
+
+.secondary-subtitle{
+    padding-left: 2.5rem;
+    transition: 0.3s;
+    position: relative;
+    color: var(--mainRed);
+    font-weight: bold;
+}
+
+.secondary-subtitle:hover{
+    color: var(--mainRedHover);
+}
+
+.arrows{
+    display: flex;
+}
+
+.arrows .left, .arrows .right{
+    color: var(--mainBlack);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    height: 35px;
+    width: 35px;
+    background-color: var(--mainGray);
+}
+
+
+/* General end */
+
+/* Header start */
+
+header i{
+    font-size: 20px;
+}
+
+.navbar-collapse form i{
+    left: 200px;
+    top: 9px;
+}
+
+/* Header end */
+
+/* Hero start */
+
+.hero{
+    margin-block: 0;
+}
+
+/* Hero end */
+
+/* Sales start */
+
+.sales #salesRow .col-lg-3 .img-container::before{
+    content: '-40%';
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    background-color: var(--mainRed);
+    color: white;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sales #salesRow .col-lg-3 .img-container .fa-heart{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.sales #salesRow .col-lg-3 .img-container .fa-heart:hover{
+    color: white;
+    background-color: var(--mainRed);
+}
+
+.sales #salesRow .col-lg-3 .img-container{
+    position: relative;
+    background-color: var(--mainGray);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sales #salesRow .col-lg-3 h3{
+    font-size: 1rem;
+}
+
+.sales #salesRow .col-lg-3 .price{
+    color: var(--mainRed);
+}
+
+/* Sales end */
+
+/* BestSelling start */
+
+.best-sales #bestSellingRow .col-lg-3 .img-container::before{
+    content: '-40%';
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    background-color: var(--mainRed);
+    color: white;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-sales #bestSellingRow .col-lg-3 .img-container .fa-heart{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.best-sales #bestSellingRow .col-lg-3 .img-container .fa-heart:hover{
+    color: white;
+    background-color: var(--mainRed);
+}
+
+.best-sales #bestSellingRow .col-lg-3 .img-container{
+    position: relative;
+    background-color: var(--mainGray);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-sales #bestSellingRow .col-lg-3 h3{
+    font-size: 1rem;
+}
+
+.best-sales #bestSellingRow .col-lg-3 .price{
+    color: var(--mainRed);
+}
+
+
+/* BestSelling end */
+
+/* Music start */
+
+.music .circle{
+    background-color: var(--mainGray);
+    color: var(--mainBlack);
+    width: 70px;
+    height: 70px;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.music .circle p:first-child{
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.music .music-header{
+    font-size: 3rem;
+}
+
+.music .music-btn{
+    background-color: var(--mainGreen) !important;
+    transition: 0.4s;
+    color: black !important;
+}
+
+.music .music-btn:hover{
+    opacity: 0.5;
+}
+
+/* Music end */
+
+/* Products start */
+
+.products #productsRow .col-lg-3 .img-container::before{
+    content: '-40%';
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    background-color: var(--mainRed);
+    color: white;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products #productsRow .col-lg-3 .img-container .fa-heart{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.products #productsRow .col-lg-3 .img-container .fa-heart:hover{
+    color: white;
+    background-color: var(--mainRed);
+}
+
+
+
+.products #productsRow .col-lg-3 .img-container{
+    position: relative;
+    background-color: var(--mainGray);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products #productsRow .col-lg-3 h3{
+    font-size: 1rem;
+}
+
+.products #productsRow .col-lg-3 .price{
+    color: var(--mainRed);
+}
+
+/* Products end */
+
+/* Featured start */
+
+.featured .icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainLightGray);
+    border-radius: 45px;
+    width: 65px;
+    height: 65px;
+}
+
+.featured .icons-container img{
+    background-color: var(--mainBlack);
+    border-radius: 40px;
+    padding: 5px;
+}
+
+/* Featured end */
+
+/* box-shadow: 0px 0px 5px 5px rgb(0, 0, 0, 0.2);
+} */
+ /* tbody border nothing instead of solid */
+
+/* logout start */
+
+.logout{
+    min-height: 100px;
+    height: calc(100vh - 559px);
+}
+
+/* logout end */
